@@ -10,6 +10,8 @@ RUN apt-get update \
     && apt-get install \
     dstat \
     firefox \
+    cmake \
+    python \
     && rm -rf /var/lib/apt/lists/*
 
 COPY .spacemacs "${UHOME}/.spacemacs"
